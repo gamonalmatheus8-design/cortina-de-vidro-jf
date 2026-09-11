@@ -1,19 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap');
 @import url('./base.css');
 
-/* Final presentation refinement — typography, photographic art direction and brand clarity. */
+/* V2.2 — Brand Alignment
+   Direção extraída da presença visual atual: azul institucional, azul claro,
+   branco e verde como acento de ação. Mantém a estrutura arquitetônica da V2. */
 :root {
-  font-family: 'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;
+  --brand-blue: #246c94;
+  --brand-blue-deep: #123f59;
+  --brand-blue-dark: #0d344b;
+  --brand-sky: #70b8df;
+  --brand-sky-soft: #dff1fa;
+  --brand-green: #25d366;
+  --brand-green-dark: #1fb455;
+  --brand-ice: #f5f9fb;
+  --brand-line: #d7e5ec;
+  --brand-text: #183d50;
+  --paper: var(--brand-ice);
+  --white: #fff;
+  --ink: var(--brand-text);
+  --muted: #667d89;
+  --line: var(--brand-line);
+  --dark: var(--brand-blue-dark);
+  --light-muted: #c7dce7;
+  --accent: var(--brand-green);
   --font-ui: 'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-ui);
 }
 
 body,
 button,
 input,
 textarea,
-select {
-  font-family: var(--font-ui);
-}
+select { font-family: var(--font-ui); }
+
+body { background: var(--brand-ice); }
 
 h1,
 h2,
@@ -24,20 +44,9 @@ h3,
   font-optical-sizing: auto;
 }
 
-h1 {
-  font-weight: 500;
-  letter-spacing: -.071em;
-}
-
-h2 {
-  font-weight: 500;
-  letter-spacing: -.052em;
-}
-
-h3 {
-  font-weight: 500;
-  letter-spacing: -.031em;
-}
+h1 { font-weight: 600; letter-spacing: -.067em; }
+h2 { font-weight: 500; letter-spacing: -.05em; color: var(--brand-blue-deep); }
+h3 { font-weight: 500; letter-spacing: -.029em; }
 
 .eyebrow,
 .brand small,
@@ -45,140 +54,414 @@ h3 {
 .fine-print,
 #step-count {
   font-weight: 500;
-  letter-spacing: .155em;
+  letter-spacing: .145em;
 }
 
-.brand strong {
+.eyebrow { color: var(--brand-blue); }
+.brand strong { font-weight: 600; letter-spacing: .095em; }
+.muted { color: #75909d; }
+
+::selection { background: var(--brand-blue); color: #fff; }
+:focus-visible { outline-color: var(--brand-green-dark); }
+
+/* Header — leitura imediata da marca, sem copiar o site atual. */
+.site-header {
+  background: rgba(255,255,255,.97);
+  border-bottom-color: rgba(36,108,148,.16);
+  box-shadow: 0 10px 35px rgba(17,67,92,.06);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner { min-height: 84px; }
+.brand { color: var(--brand-blue); }
+.brand-mark { color: var(--brand-sky); }
+.brand strong { color: var(--brand-blue-deep); }
+.brand small { color: var(--brand-blue); }
+
+#navigation { color: #3f6171; }
+#navigation a:hover { color: var(--brand-blue); }
+#navigation .nav-contact {
+  margin-left: 18px;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(255,255,255,.58);
+  border-radius: 8px;
+  background: var(--brand-green);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(37,211,102,.18);
+  text-decoration: none;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+#navigation .nav-contact:hover {
+  background: var(--brand-green-dark);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(37,211,102,.24);
+}
+
+/* Hero — mais próximo do DNA atual: fotografia + azul + branco + CTA verde. */
+.hero {
+  position: relative;
+  background: var(--brand-blue-deep);
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-heading {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100% - var(--gutter) * 2, 1480px);
+  min-height: clamp(610px, 76vh, 780px);
+  padding-block: clamp(74px, 10vh, 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-eyebrow {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 28px;
+  color: rgba(255,255,255,.86);
+}
+
+.hero h1 {
+  max-width: 980px;
+  color: #fff;
+  text-shadow: 0 4px 28px rgba(7,38,55,.2);
+}
+.hero h1 span { color: #fff; }
+
+.hero-aside {
+  margin-top: 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-aside p {
+  max-width: 640px;
+  margin: 0;
+  color: rgba(255,255,255,.92);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.hero-aside .text-link {
+  margin-top: 24px;
+  min-height: 56px;
+  padding: 14px 22px;
+  justify-content: center;
+  gap: 26px;
+  border: 1px solid rgba(255,255,255,.78);
+  border-radius: 8px;
+  background: var(--brand-green);
+  color: #fff;
+  box-shadow: 0 14px 32px rgba(13,52,75,.2);
   font-weight: 600;
-  letter-spacing: .105em;
+  text-decoration: none;
 }
+.hero-aside .text-link:hover { background: var(--brand-green-dark); }
 
-/* Keep the current official photographs visually dominant without inventing project metadata. */
-.hero-photo,
+.hero-photo {
+  position: relative;
+  width: 100%;
+  height: clamp(610px, 76vh, 780px);
+  max-width: none;
+  margin: 0;
+  background: var(--brand-blue-deep);
+  isolation: isolate;
+  overflow: hidden;
+}
+.hero-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(19,72,101,.78), rgba(44,139,188,.53) 52%, rgba(24,86,116,.66)),
+    linear-gradient(180deg, rgba(10,47,68,.18), rgba(9,47,67,.22));
+  pointer-events: none;
+}
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.hero-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 52%;
+  filter: saturate(1.04) contrast(1.025);
+}
+.hero-photo figcaption {
+  z-index: 3;
+  color: rgba(255,255,255,.9);
+  background: linear-gradient(transparent, rgba(6,43,62,.54));
+}
+.hero-photo :focus-visible { outline-color: #fff; }
+
+.facts {
+  position: relative;
+  z-index: 6;
+  background: #fff;
+  color: var(--brand-blue-deep);
+  border-bottom-color: var(--brand-line);
+  box-shadow: 0 14px 38px rgba(18,63,89,.05);
+}
+.facts span::before { color: var(--brand-green-dark); }
+
+/* Estrutura editorial preservada, agora na linguagem azul da marca. */
+.introduction { background: var(--brand-ice); }
+.introduction h2,
+.section-heading h2,
+.engineering h2,
+.simulator h2,
+.process h2,
+.faq h2 { color: var(--brand-blue-deep); }
+
+.projects { background: #fff; }
+.projects .section-heading > p { color: #6a818d; }
+.works { max-width: 1280px; }
 .work-image {
   isolation: isolate;
-  background: #d8ded8;
+  background: #d9e9f1;
+  box-shadow: 0 18px 46px rgba(18,63,89,.07);
 }
-
-.hero-photo::after,
 .work-image::after {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
-  border: 1px solid rgba(32, 42, 40, .08);
+  border: 1px solid rgba(36,108,148,.1);
   z-index: 2;
 }
-
-.hero-photo > img,
 .work-image img {
-  filter: saturate(.9) contrast(1.025);
-}
-
-.work-image img {
+  filter: saturate(.96) contrast(1.025);
   transition: transform .8s var(--ease), filter .5s ease;
 }
-
-@media (hover: hover) {
-  .work-image:hover img {
-    transform: scale(1.018);
-    filter: saturate(.96) contrast(1.035);
-  }
+.image-action {
+  background: rgba(255,255,255,.94);
+  color: var(--brand-blue-deep);
+  border: 1px solid rgba(36,108,148,.14);
 }
-
 .work figcaption {
   padding-top: 16px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--brand-line);
 }
-
-.work h3 {
-  line-height: 1.12;
-}
-
+.work-number { color: var(--brand-blue); }
+.work h3 { color: var(--brand-blue-deep); line-height: 1.12; }
 .work figcaption p,
-.caption-note {
-  letter-spacing: .025em;
+.caption-note { color: #70838d; letter-spacing: .02em; }
+
+@media (hover: hover) {
+  .work-image:hover img { transform: scale(1.018); filter: saturate(1.02) contrast(1.035); }
+  .work-image:hover .image-action { color: var(--brand-green-dark); }
 }
 
-@media (min-width: 901px) {
-  .hero-photo {
-    width: min(calc(100% - var(--gutter) * 2), 1320px);
-    margin-inline: auto;
-    height: clamp(450px, 49vh, 640px);
-  }
-
-  .hero-photo figcaption {
-    padding-inline: 28px;
-  }
-
-  .works {
-    max-width: 1280px;
-  }
-
-  .work-wide .work-image {
-    aspect-ratio: 2.18;
-  }
-
-  .work-portrait {
-    width: 92%;
-  }
-
-  .work-offset {
-    width: 92%;
-    justify-self: end;
-  }
-
-  .work-final {
-    width: 76%;
-  }
+/* O sistema vira o núcleo técnico azul da marca. */
+.system {
+  background:
+    radial-gradient(circle at 80% 10%, rgba(112,184,223,.17), transparent 34%),
+    linear-gradient(140deg, var(--brand-blue-dark), #123f59 58%, #174f6d);
+  color: #fff;
 }
-
-/* The three-panel sign is a presentation concept, not an official supplied logo. */
-.site-footer .brand {
-  position: relative;
-  padding-bottom: 23px;
+.system h2 { color: #fff; }
+.system .eyebrow { color: #9ed7f2; }
+.system .section-heading > p,
+.system .fine-print { color: #c9dde7; }
+.system :focus-visible { outline-color: var(--brand-green); }
+.state-buttons { border-top-color: rgba(187,220,236,.28); }
+.state-buttons button {
+  color: #bcd5e2;
+  border-bottom-color: rgba(187,220,236,.25);
 }
+.state-buttons button[aria-pressed=true] {
+  color: #fff;
+  border-bottom-color: var(--brand-green);
+}
+.state-buttons button[aria-pressed=true] > span:first-child { color: var(--brand-green); }
+#movement-description { color: #d8e8ef; }
+.movement {
+  border-color: rgba(168,211,231,.38);
+  background: rgba(255,255,255,.025);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
+.landscape { stroke: #3f7894; }
+.guide { stroke: #d2edf9; }
+.reflection { stroke: #9bd9f0; opacity: .3; }
+.direction { stroke: var(--brand-green); }
+.movement-control { border-top-color: rgba(168,211,231,.35); }
+.movement-control input { accent-color: var(--brand-green); }
 
+/* Engenharia — branco técnico com azul institucional e acento verde. */
+.engineering { background: var(--brand-ice); }
+.engineering .eyebrow { color: var(--brand-blue); }
+.engineering-lead,
+.engineering .fine-print { color: #6c828e; }
+.material-symbol span { border-color: var(--brand-blue); }
+.material-symbol span:nth-child(2) { background: var(--brand-sky-soft); }
+.specifications { border-top-color: var(--brand-line); }
+.specifications > div { border-bottom-color: var(--brand-line); }
+.specifications dt { color: var(--brand-blue-deep); }
+.specifications dt span { color: var(--brand-green-dark); }
+.specifications dd { color: #6c818c; }
+
+/* Simulador — linguagem de marca sem virar “tela de app”. */
+.simulator { background: linear-gradient(180deg, #eaf5fa, #f5f9fb); }
+.simulator-intro .eyebrow { color: var(--brand-blue); }
+.simulator-intro > p:not(.eyebrow) { color: #5f7884; }
+.sim-note { border-top-color: #bfd7e3; color: var(--brand-blue-deep); }
+.sim-note > span { color: var(--brand-green-dark); }
+.qualification {
+  background: #fff;
+  border: 1px solid rgba(36,108,148,.12);
+  box-shadow: 0 24px 60px rgba(18,63,89,.08);
+}
+progress { background: #dceaf1; color: var(--brand-green); }
+progress::-webkit-progress-bar { background: #dceaf1; }
+progress::-webkit-progress-value { background: linear-gradient(90deg, var(--brand-blue), var(--brand-green)); }
+progress::-moz-progress-bar { background: var(--brand-green); }
+.choice { border-color: #cfdee6; }
+.choice:hover { border-color: var(--brand-blue); }
+.choice:has(input:checked) {
+  background: #edf8fc;
+  border-color: var(--brand-green-dark);
+}
+.choice:has(input:checked) strong { color: var(--brand-blue-deep); }
+.choice:has(input:focus-visible) { outline-color: var(--brand-green-dark); }
+.shape { color: var(--brand-blue); }
+.contact-fields input:focus { border-color: var(--brand-blue); }
+.button-dark {
+  background: var(--brand-green);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(37,211,102,.17);
+}
+.button-dark:hover { background: var(--brand-green-dark); }
+.button-quiet { border-color: #c7d9e2; color: var(--brand-blue-deep); }
+.button-quiet:hover:enabled { background: #edf6fa; }
+
+.process { background: var(--brand-ice); }
+.process-list { border-top-color: var(--brand-line); }
+.process-list li > span { color: var(--brand-green-dark); }
+.process-list h3 { color: var(--brand-blue-deep); }
+.process-list p { color: #6c818c; }
+
+.faq { background: #fff; }
+.faq .eyebrow { color: var(--brand-blue); }
+.faq-list details { border-top-color: var(--brand-line); }
+.faq-list details:last-child { border-bottom-color: var(--brand-line); }
+.faq-list summary { color: var(--brand-blue-deep); }
+.faq-list summary::after { color: var(--brand-green-dark); }
+.faq-list details > p { color: #697f8a; }
+
+/* Fechamento e rodapé com presença institucional. */
+.closing {
+  background:
+    radial-gradient(circle at 74% 18%, rgba(112,184,223,.14), transparent 32%),
+    var(--brand-blue-dark);
+  color: #fff;
+}
+.closing .eyebrow { color: #9ed7f2; }
+.closing h2 { color: #fff; }
+.closing .button-light {
+  background: var(--brand-green);
+  color: #fff;
+  border-color: rgba(255,255,255,.45);
+}
+.closing .button-light:hover { background: var(--brand-green-dark); }
+.closing-line { border-block-color: rgba(159,208,231,.32); }
+.closing-line span { border-right-color: rgba(159,208,231,.32); }
+.closing-line span:first-child { border-left-color: rgba(159,208,231,.32); }
+
+.site-footer { background: #fff; }
+.site-footer .brand { position: relative; padding-bottom: 23px; }
 .site-footer .brand::after {
   content: 'SÍMBOLO CONCEITUAL · APRESENTAÇÃO';
   position: absolute;
   left: 49px;
   bottom: 0;
-  color: var(--muted);
+  color: #82949d;
   font-size: 8px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: .14em;
   white-space: nowrap;
 }
+.site-footer .eyebrow { color: var(--brand-blue); }
+.site-footer a:hover { color: var(--brand-blue); }
+.footer-bottom { border-top-color: var(--brand-line); }
 
-.site-header .brand-mark,
-.site-footer .brand-mark {
-  stroke-width: .9;
+.floating-cta {
+  background: var(--brand-green);
+  border-color: rgba(255,255,255,.7);
+  box-shadow: 0 14px 30px rgba(20,92,57,.2);
+}
+.floating-cta:hover { background: var(--brand-green-dark); }
+
+/* Galeria mantém o refinamento, agora com leitura azul institucional. */
+dialog { background: #f7fbfd; color: var(--brand-blue-deep); }
+dialog::backdrop { background: rgba(7,42,61,.9); }
+.dialog-top button,
+.dialog-navigation button { border-color: #cbdde6; color: var(--brand-blue-deep); }
+.dialog-top button:hover,
+.dialog-navigation button:hover { border-color: var(--brand-blue); }
+dialog figcaption p { color: #6e838d; }
+
+@media (min-width: 901px) {
+  .hero-photo { height: clamp(610px, 76vh, 780px); }
+  .hero-photo figcaption { padding-inline: 30px; }
+  .work-wide .work-image { aspect-ratio: 2.18; }
+  .work-portrait { width: 92%; }
+  .work-offset { width: 92%; justify-self: end; }
+  .work-final { width: 76%; }
+}
+
+@media (max-width: 900px) {
+  .site-header { background: rgba(255,255,255,.985); }
+  #navigation .nav-contact { margin-left: 0; margin-top: 10px; justify-content: space-between; }
+  .hero-heading {
+    min-height: 590px;
+    padding-block: 62px 54px;
+  }
+  .hero-photo { height: 590px; }
+  .hero-aside p { font-size: 14px; }
 }
 
 @media (max-width: 600px) {
-  h1 {
-    letter-spacing: -.061em;
+  h1 { letter-spacing: -.056em; }
+  .header-inner { min-height: 72px; }
+  .brand-mark { color: var(--brand-sky); }
+  .hero-heading {
+    width: calc(100% - 40px);
+    min-height: 520px;
+    padding-block: 56px 42px;
   }
-
-  .hero-photo,
-  .works {
-    width: 100%;
-  }
-
-  .work figcaption {
-    padding-top: 13px;
-  }
-
-  .site-footer .brand::after {
-    left: 39px;
-    font-size: 7px;
-  }
+  .hero-eyebrow { margin-bottom: 20px; color: rgba(255,255,255,.82); }
+  .hero-photo { width: 100%; height: 520px; }
+  .hero-photo > img { object-position: 64% 50%; }
+  .hero-aside { margin-top: 22px; }
+  .hero-aside p { font-size: 13px; }
+  .hero-aside .text-link { width: 100%; min-height: 52px; margin-top: 18px; }
+  .hero-photo figcaption { padding: 30px 24px 12px; }
+  .facts { background: #fff; }
+  .work figcaption { padding-top: 13px; }
+  .qualification { box-shadow: none; }
+  .site-footer .brand::after { left: 39px; font-size: 7px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .work-image img {
-    transition: none;
-  }
+  .work-image img,
+  #navigation .nav-contact,
+  .hero-aside .text-link { transition: none; }
 }
