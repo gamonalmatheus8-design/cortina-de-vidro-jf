@@ -1,300 +1,169 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#11171b" />
-  <meta name="description" content="Conceito premium para Cortina de Vidro JF: fechamento de varandas, portfólio, experiência técnica e solicitação de visita em Juiz de Fora e região." />
-  <meta name="robots" content="noindex,nofollow" />
-  <title>Cortina de Vidro JF — Architectural Experience</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f3ee">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Cortina de Vidro JF — Vista livre. Presença mínima.</title>
+  <meta name="description" content="Fechamento de varandas em Juiz de Fora. Conheça o sistema, explore imagens de obras e organize sua solicitação de avaliação técnica.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Cortina de Vidro JF — Vista livre. Presença mínima.">
+  <meta property="og:description" content="Arquitetura em vidro. Fechamento de varandas em Juiz de Fora e região. Conceito demonstrativo não oficial.">
+  <!-- Lançamento oficial: configurar canonical, og:url, og:image absolutos e LocalBusiness
+       com domínio e identidade aprovados. Manter noindex na demonstração. -->
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
-<body>
-  <header class="site-header" id="top">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Cortina de Vidro JF — início">
-        <span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="brand-copy"><strong>CORTINA DE VIDRO</strong><small>JUIZ DE FORA</small></span>
+<body id="inicio">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio">
+        <svg class="brand-mark" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M3 9h9v32H3zM18 5h9v32h-9zM33 1h9v32h-9z" stroke="currentColor"/></svg>
+        <span><strong>CORTINA DE VIDRO</strong><small>JUIZ DE FORA</small></span>
       </a>
-      <nav class="nav-links" aria-label="Navegação principal">
-        <a href="#projetos">Projetos</a>
-        <a href="#sistema">Sistema</a>
-        <a href="#simulador">Simulador</a>
-        <a href="#processo">Processo</a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">＋</span></button>
+      <nav id="navigation" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a><a href="#sistema">Sistema</a><a href="#engenharia">Engenharia</a>
+        <a class="nav-contact" href="#simulador">Avaliar minha varanda <span aria-hidden="true">↗</span></a>
       </nav>
-      <a class="nav-cta" href="#simulador">Agendar avaliação <span>↗</span></a>
-      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
-    <div class="mobile-nav" id="mobileNav">
-      <a href="#projetos">Projetos</a><a href="#sistema">Sistema</a><a href="#simulador">Simulador</a><a href="#processo">Processo</a>
     </div>
   </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-shade" aria-hidden="true"></div>
-      <div class="container hero-content">
-        <div class="hero-copy reveal">
-          <div class="kicker"><span></span> FECHAMENTO DE VARANDAS · JUIZ DE FORA</div>
-          <h1>Sua varanda,<br><em>sem barreiras visuais.</em></h1>
-          <p>Arquitetura, proteção e integração em uma solução de fechamento que preserva a leitura do ambiente e valoriza cada detalhe.</p>
-          <div class="hero-actions">
-            <a class="button button-light" href="#simulador">Avaliar minha varanda <span>→</span></a>
-            <a class="button button-glass" href="#projetos">Ver projetos</a>
-          </div>
-        </div>
-        <aside class="hero-panel reveal delay-1">
-          <div class="panel-top"><small>EXPERIÊNCIA DIGITAL</small><span>01 — 04</span></div>
-          <div class="panel-line"></div>
-          <div class="panel-metric"><small>ATENDIMENTO</small><strong>Juiz de Fora + região</strong></div>
-          <div class="panel-metric"><small>SISTEMA</small><strong>Sem esquadrias verticais</strong></div>
-          <div class="panel-foot"><span class="live-dot"></span> VISITA TÉCNICA DISPONÍVEL</div>
-        </aside>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-heading">
+        <p class="eyebrow hero-eyebrow">Arquitetura em vidro <span>Juiz de Fora · MG</span></p>
+        <h1 id="hero-title">Vista livre.<br><span>Presença mínima.</span></h1>
+        <div class="hero-aside"><p>Fechamento de varandas. <br>Mais possibilidades para o espaço.<br>A mesma relação com a paisagem.</p><a class="text-link" href="#simulador">Avaliar minha varanda <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="hero-bottom container">
-        <div><span>01</span><p><strong>Visão panorâmica</strong><small>menos interferência visual</small></p></div>
-        <div><span>02</span><p><strong>Uso inteligente</strong><small>mais aproveitamento do ambiente</small></p></div>
-        <div><span>03</span><p><strong>Atendimento técnico</strong><small>avaliação antes da proposta</small></p></div>
+      <figure class="hero-photo">
+        <img src="assets/view-12-1080.webp" srcset="assets/view-12-480.webp 480w, assets/view-12-768.webp 768w, assets/view-12-1080.webp 1080w" sizes="100vw" width="1080" height="810" fetchpriority="high" alt="Varanda com painéis de vidro recolhidos à direita e vista aberta para a cidade.">
+        <figcaption><span>Transparência em perspectiva.</span><a href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a></figcaption>
+      </figure>
+      <div class="shell facts" role="group" aria-label="Características do sistema"><span>Sem esquadrias verticais</span><span>Painéis deslizantes e recolhíveis</span><span>Avaliação técnica do seu espaço</span></div>
+    </section>
+    <section class="shell introduction section" aria-labelledby="intro-title">
+      <p class="eyebrow section-index">01 / Essência</p>
+      <h2 id="intro-title">A arquitetura fica.<br><span class="muted">A vista também.</span></h2>
+      <div class="intro-copy"><p>A varanda é o encontro entre a casa e o exterior. O fechamento em vidro permite repensar esse espaço, preservando a continuidade visual.</p><p>Transparência, movimento e atenção ao que já existe. Cada solução começa pela leitura do ambiente.</p></div>
+    </section>
+    <section class="projects section" id="projetos" aria-labelledby="projects-title">
+      <div class="shell section-heading"><div><p class="eyebrow">02 / Projetos</p><h2 id="projects-title">Entre o espaço<br>e a paisagem.</h2></div><p>Uma seleção de imagens de obras publicadas pela Cortina de Vidro JF. Diferentes olhares sobre o fechamento em vidro.</p></div>
+      <div class="shell works">
+        <figure class="work work-wide">
+          <a class="work-image" href="assets/view-3-1080.webp" data-project="01" aria-label="Ampliar imagem 01 — Continuidade visual"><img src="assets/view-3-1080.webp" srcset="assets/view-3-480.webp 480w, assets/view-3-768.webp 768w, assets/view-3-1080.webp 1080w" sizes="(max-width: 700px) 90vw, 85vw" width="1080" height="1080" loading="lazy" decoding="async" alt="Painéis de vidro acompanhando a extensão de uma varanda, com a cidade e as montanhas ao fundo."><span class="image-action" aria-hidden="true">Ampliar ↗</span></a>
+          <figcaption><span class="work-number">01</span><div><h3>Continuidade visual</h3><p>Fechamento de varanda · vista interna</p></div><span class="caption-note">Vidro + paisagem</span></figcaption>
+        </figure>
+        <figure class="work work-portrait">
+          <a class="work-image" href="assets/view-4-1080.webp" data-project="02" aria-label="Ampliar imagem 02 — Em diálogo com a fachada"><img src="assets/view-4-1080.webp" srcset="assets/view-4-480.webp 480w, assets/view-4-768.webp 768w, assets/view-4-1080.webp 1080w" sizes="(max-width: 700px) 90vw, 42vw" width="1080" height="1080" loading="lazy" decoding="async" alt="Vista externa de uma fachada amarela com varanda curva, guarda-corpo branco e fechamento em vidro."><span class="image-action" aria-hidden="true">Ampliar ↗</span></a>
+          <figcaption><span class="work-number">02</span><div><h3>Em diálogo com a fachada</h3><p>Fechamento de varanda · vista externa</p></div></figcaption>
+        </figure>
+        <figure class="work work-offset">
+          <a class="work-image" href="assets/view-5-1080.webp" data-project="03" aria-label="Ampliar imagem 03 — Uma outra perspectiva"><img src="assets/view-5-1080.webp" srcset="assets/view-5-480.webp 480w, assets/view-5-768.webp 768w, assets/view-5-1080.webp 921w" sizes="(max-width: 700px) 90vw, 42vw" width="921" height="878" loading="lazy" decoding="async" alt="Vista em perspectiva de painéis fechados, com céu azul e edifícios vistos através do vidro."><span class="image-action" aria-hidden="true">Ampliar ↗</span></a>
+          <figcaption><span class="work-number">03</span><div><h3>Uma outra perspectiva</h3><p>Fechamento de varanda · vista interna</p></div></figcaption>
+        </figure>
+        <figure class="work work-final">
+          <a class="work-image" href="assets/view-6-1080.webp" data-project="04" aria-label="Ampliar imagem 04 — O desenho da abertura"><img src="assets/view-6-1080.webp" srcset="assets/view-6-480.webp 480w, assets/view-6-1080.webp 768w" sizes="(max-width: 700px) 90vw, 64vw" width="768" height="768" loading="lazy" decoding="async" alt="Fechamento parcialmente aberto, mostrando a transição entre os painéis de vidro e a vista para a cidade."><span class="image-action" aria-hidden="true">Ampliar ↗</span></a>
+          <figcaption><span class="work-number">04</span><div><h3>O desenho da abertura</h3><p>Painéis e paisagem · detalhe de abertura</p></div></figcaption>
+        </figure>
       </div>
     </section>
-
-    <section class="credibility-strip">
-      <div class="container credibility-grid reveal">
-        <div><small>SISTEMA</small><strong>Patenteado desde 1996</strong></div>
-        <div><small>QUALIDADE</small><strong>Certificações e testes técnicos</strong></div>
-        <div><small>GARANTIA</small><strong>Até 5 anos*</strong></div>
-        <div><small>ATENDIMENTO</small><strong>Raio de até 200 km*</strong></div>
-      </div>
-      <div class="container source-note">*Informações apresentadas conforme conteúdo publicado atualmente pela própria empresa e sujeitas à validação comercial.</div>
-    </section>
-
-    <section class="section editorial-intro">
-      <div class="container editorial-grid">
-        <div class="editorial-index reveal"><span>01</span><small>ARQUITETURA + FUNÇÃO</small></div>
-        <div class="editorial-copy reveal delay-1">
-          <p class="eyebrow">UMA NOVA LEITURA PARA A VARANDA</p>
-          <h2>Fechar o espaço não precisa <em>fechar a vista.</em></h2>
+    <section class="system section" id="sistema" aria-labelledby="system-title">
+      <div class="shell section-heading"><div><p class="eyebrow">03 / O sistema</p><h2 id="system-title">O espaço muda.<br>A vista permanece.</h2></div><p>Os painéis deslizam e se recolhem. Explore a sequência para entender o princípio de abertura.</p></div>
+      <div class="shell system-layout">
+        <div class="system-explanation">
+          <div class="state-buttons" role="group" aria-label="Etapas do movimento">
+            <button type="button" data-state="0" aria-pressed="true"><span>01</span> Fechado <span aria-hidden="true">↗</span></button>
+            <button type="button" data-state="50" aria-pressed="false"><span>02</span> Deslizando <span aria-hidden="true">↗</span></button>
+            <button type="button" data-state="100" aria-pressed="false"><span>03</span> Recolhido <span aria-hidden="true">↗</span></button>
+          </div>
+          <p id="movement-description" aria-live="polite">Painéis alinhados para fechar o vão, sem esquadrias verticais entre os vidros.</p>
+          <p class="fine-print">Ilustração conceitual, sem escala. Quantidade de painéis e configuração de abertura dependem da avaliação do local.</p>
         </div>
-        <div class="editorial-text reveal delay-2">
-          <p>Uma boa solução precisa conversar com a fachada, permitir uso confortável do ambiente e manter a sensação de amplitude.</p>
-          <a href="#sistema">Entender o sistema <span>↗</span></a>
+        <div class="movement">
+          <div class="movement-top"><span class="eyebrow">Princípio de abertura</span><span id="movement-state">Fechado</span></div>
+          <svg id="system-drawing" viewBox="0 0 680 400" role="img" aria-labelledby="drawing-title drawing-desc">
+            <title id="drawing-title">Sequência conceitual de abertura dos painéis</title><desc id="drawing-desc">Painéis de vidro se deslocam ao longo de uma guia e giram para se recolher numa lateral. Representação sem dimensões reais.</desc>
+            <defs><linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#bed2d0" stop-opacity=".27"/><stop offset="1" stop-color="#bed2d0" stop-opacity=".04"/></linearGradient></defs>
+            <path class="landscape" d="M35 240 120 207 190 222 305 158 390 204 474 179 645 241M35 276H645"/>
+            <path class="guide" d="M35 62H645M35 326H645"/>
+            <g id="glass-panels" fill="url(#glass)" stroke="#baccc9" stroke-width="1">
+              <g data-panel="0" transform="translate(40 0)"><path d="M0 74H94V314H0Z"/><path class="reflection" d="m14 270 56-174"/></g>
+              <g data-panel="1" transform="translate(140 0)"><path d="M0 74H94V314H0Z"/><path class="reflection" d="m14 270 56-174"/></g>
+              <g data-panel="2" transform="translate(240 0)"><path d="M0 74H94V314H0Z"/><path class="reflection" d="m14 270 56-174"/></g>
+              <g data-panel="3" transform="translate(340 0)"><path d="M0 74H94V314H0Z"/><path class="reflection" d="m14 270 56-174"/></g>
+              <g data-panel="4" transform="translate(440 0)"><path d="M0 74H94V314H0Z"/><path class="reflection" d="m14 270 56-174"/></g>
+              <g data-panel="5" transform="translate(540 0)"><path d="M0 74H94V314H0Z"/><path class="reflection" d="m14 270 56-174"/></g>
+            </g>
+            <path class="direction" d="M365 358H592m-9-7 9 7-9 7"/>
+          </svg>
+          <div class="movement-control"><label for="opening">Explore o movimento</label><input type="range" id="opening" min="0" max="100" value="0" aria-describedby="movement-description"><div class="range-ends"><span>Fechado</span><span>Recolhido</span></div></div>
         </div>
-      </div>
-    </section>
-
-    <section class="section projects" id="projetos">
-      <div class="container section-head reveal">
-        <div><p class="eyebrow">PROJETOS</p><h2>Obras reais merecem apresentação de <em>case arquitetônico.</em></h2></div>
-        <p>Na versão final, cada projeto pode receber localização, contexto, solução aplicada, detalhes técnicos e uma seleção de imagens aprovada pela empresa.</p>
-      </div>
-
-      <div class="container project-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-image image-a"><span class="image-label">OBRA PUBLICADA · DEMONSTRAÇÃO</span></div>
-          <div class="project-caption"><div><small>RESIDENCIAL · JUIZ DE FORA</small><h3>Varanda panorâmica</h3></div><span>01</span></div>
-        </article>
-        <article class="project-card reveal delay-1">
-          <div class="project-image image-b"><span class="image-label">OBRA PUBLICADA · DEMONSTRAÇÃO</span></div>
-          <div class="project-caption"><div><small>RESIDENCIAL</small><h3>Integração visual</h3></div><span>02</span></div>
-        </article>
-        <article class="project-card reveal delay-2">
-          <div class="project-image image-c"><span class="image-label">OBRA PUBLICADA · DEMONSTRAÇÃO</span></div>
-          <div class="project-caption"><div><small>FECHAMENTO DE VARANDA</small><h3>Proteção + abertura</h3></div><span>03</span></div>
-        </article>
-      </div>
-
-      <div class="container projects-foot reveal">
-        <p><strong>Portfólio preparado para conteúdo real.</strong> Nenhum dado de metragem, cliente, potência ou desempenho foi inventado.</p>
-        <a href="#simulador">Quero avaliar meu espaço <span>→</span></a>
       </div>
     </section>
-
-    <section class="section system-section" id="sistema">
-      <div class="container system-grid">
-        <div class="system-copy reveal">
-          <p class="eyebrow light">COMO O SISTEMA SE COMPORTA</p>
-          <h2>Fechado quando precisa.<br><em>Aberto quando você quer.</em></h2>
-          <p>Uma experiência visual para mostrar o princípio de deslizamento e recolhimento dos painéis sem transformar a página em um manual técnico.</p>
-          <div class="system-tabs" role="tablist" aria-label="Estados do sistema">
-            <button class="system-tab active" data-system-state="closed" type="button">01 Fechado</button>
-            <button class="system-tab" data-system-state="slide" type="button">02 Deslizando</button>
-            <button class="system-tab" data-system-state="open" type="button">03 Recolhido</button>
-          </div>
-        </div>
-        <div class="system-demo reveal delay-1" id="systemDemo" data-state="closed" aria-label="Demonstração conceitual de painéis de vidro">
-          <div class="demo-room"><div class="demo-horizon"></div><div class="demo-floor"></div></div>
-          <div class="glass-track"><span></span><span></span><span></span><span></span><span></span></div>
-          <div class="demo-caption"><small>VISUALIZAÇÃO CONCEITUAL</small><strong id="systemLabel">Painéis fechados</strong></div>
-        </div>
-      </div>
-
-      <div class="container technical-points">
-        <article class="reveal"><span>01</span><h3>Sem esquadrias verticais</h3><p>O sistema preserva uma leitura visual mais limpa quando fechado.</p></article>
-        <article class="reveal delay-1"><span>02</span><h3>Abertura para o interior</h3><p>O próprio site da empresa destaca a facilidade de limpeza pelo lado interno.</p></article>
-        <article class="reveal delay-2"><span>03</span><h3>Perfis em alumínio</h3><p>Materiais e componentes técnicos podem ser apresentados com precisão e transparência.</p></article>
-        <article class="reveal"><span>04</span><h3>Redução de ruído</h3><p>Comunicação responsável: redução de ruído sem vender o produto como vedação acústica.</p></article>
-      </div>
+    <section class="shell engineering section" id="engenharia" aria-labelledby="engineering-title">
+      <div><p class="eyebrow">04 / Leitura técnica</p><h2 id="engineering-title">Precisão em<br>cada encontro.</h2><p class="engineering-lead">Materiais, movimento e manutenção. O sistema começa nos detalhes.</p><div class="material-symbol" aria-hidden="true"><span></span><span></span><span></span></div><p class="fine-print">Informações de materiais divulgadas pela empresa. Especificações e condições de instalação são definidas na avaliação técnica.</p></div>
+      <dl class="specifications">
+        <div><dt><span>01</span> Perfis em alumínio</dt><dd>Estrutura que acompanha as linhas do fechamento.</dd></div>
+        <div><dt><span>02</span> Roldanas em aço inox e nylon</dt><dd>Componentes do mecanismo de deslizamento.</dd></div>
+        <div><dt><span>03</span> Sem esquadrias verticais</dt><dd>Continuidade visual entre os painéis de vidro.</dd></div>
+        <div><dt><span>04</span> Abertura para o interior</dt><dd>Acesso aos vidros pelo lado interno para facilitar a limpeza.</dd></div>
+      </dl>
     </section>
-
-    <section class="section simulator" id="simulador">
-      <div class="container simulator-grid">
-        <div class="sim-copy reveal">
-          <p class="eyebrow">AVALIAÇÃO INICIAL</p>
-          <h2>Conte como é a sua varanda.</h2>
-          <p>Em poucos passos, o visitante organiza as informações essenciais antes de solicitar uma visita técnica.</p>
-          <div class="sim-checks">
-            <div><span>✓</span> Sem estimativa de preço fictícia</div>
-            <div><span>✓</span> Resumo antes do WhatsApp</div>
-            <div><span>✓</span> Perfil mais qualificado para a equipe</div>
-          </div>
-          <div class="sim-visual-note"><small>OBJETIVO DA EXPERIÊNCIA</small><strong>Transformar curiosidade em uma solicitação de visita melhor preparada.</strong></div>
-        </div>
-
-        <form class="sim-card reveal delay-1" id="glassForm" novalidate>
-          <div class="sim-head"><div><small>CORTINA DE VIDRO JF</small><strong id="stepLabel">Tipo de imóvel</strong></div><span id="stepCounter">01 / 06</span></div>
-          <div class="progress"><span id="simProgress"></span></div>
-
-          <div class="form-step active" data-step="1" data-label="Tipo de imóvel">
-            <p class="step-question">Onde está a varanda?</p>
-            <div class="choice-grid two">
-              <button class="choice" type="button" data-group="property" data-value="Apartamento"><span>01</span><strong>Apartamento</strong><small>varanda residencial</small></button>
-              <button class="choice" type="button" data-group="property" data-value="Casa"><span>02</span><strong>Casa</strong><small>área residencial</small></button>
-              <button class="choice" type="button" data-group="property" data-value="Comercial"><span>03</span><strong>Comercial</strong><small>empresa ou empreendimento</small></button>
-              <button class="choice" type="button" data-group="property" data-value="Outro"><span>04</span><strong>Outro</strong><small>avaliar com a equipe</small></button>
-            </div>
-          </div>
-
-          <div class="form-step" data-step="2" data-label="Formato da varanda">
-            <p class="step-question">Qual formato se aproxima do seu espaço?</p>
-            <div class="shape-grid">
-              <button class="shape-choice" type="button" data-group="shape" data-value="Reta"><i class="shape-line"></i><strong>Reta</strong></button>
-              <button class="shape-choice" type="button" data-group="shape" data-value="Em L"><i class="shape-l"></i><strong>Em L</strong></button>
-              <button class="shape-choice" type="button" data-group="shape" data-value="Em U"><i class="shape-u"></i><strong>Em U</strong></button>
-              <button class="shape-choice" type="button" data-group="shape" data-value="Outro formato"><i class="shape-other">+</i><strong>Outro</strong></button>
-            </div>
-          </div>
-
-          <div class="form-step" data-step="3" data-label="Metragem aproximada">
-            <p class="step-question">Qual a metragem aproximada da área a fechar?</p>
-            <div class="meter-output"><strong id="meterValue">10</strong><span>m²</span></div>
-            <input id="meterRange" type="range" min="2" max="50" value="10" step="1" />
-            <div class="range-labels"><span>2 m²</span><span>50+ m²</span></div>
-            <p class="helper">Não precisa ser exato. A visita técnica confirma as medidas.</p>
-          </div>
-
-          <div class="form-step" data-step="4" data-label="Principal objetivo">
-            <p class="step-question">O que é mais importante para você?</p>
-            <div class="choice-list">
-              <button class="choice line" type="button" data-group="goal" data-value="Proteção contra vento e chuva"><span>01</span><strong>Proteção contra vento e chuva</strong><b>→</b></button>
-              <button class="choice line" type="button" data-group="goal" data-value="Aproveitar melhor o ambiente"><span>02</span><strong>Aproveitar melhor o ambiente</strong><b>→</b></button>
-              <button class="choice line" type="button" data-group="goal" data-value="Melhorar estética e integração"><span>03</span><strong>Melhorar estética e integração</strong><b>→</b></button>
-              <button class="choice line" type="button" data-group="goal" data-value="Reduzir ruídos externos"><span>04</span><strong>Reduzir ruídos externos</strong><b>→</b></button>
-            </div>
-          </div>
-
-          <div class="form-step" data-step="5" data-label="Momento da decisão">
-            <p class="step-question">Quando você pretende avançar?</p>
-            <div class="choice-grid two">
-              <button class="choice compact" type="button" data-group="timeline" data-value="O quanto antes"><strong>O quanto antes</strong><small>quero avaliar agora</small></button>
-              <button class="choice compact" type="button" data-group="timeline" data-value="Nos próximos 30 dias"><strong>Próximos 30 dias</strong><small>já estou comparando</small></button>
-              <button class="choice compact" type="button" data-group="timeline" data-value="Nos próximos 3 meses"><strong>Próximos 3 meses</strong><small>estou me planejando</small></button>
-              <button class="choice compact" type="button" data-group="timeline" data-value="Ainda pesquisando"><strong>Ainda pesquisando</strong><small>quero entender melhor</small></button>
-            </div>
-          </div>
-
-          <div class="form-step" data-step="6" data-label="Contato para visita">
-            <p class="step-question">Para onde a equipe pode retornar?</p>
-            <div class="field-grid">
-              <label class="field"><span>Seu nome</span><input id="leadName" type="text" autocomplete="name" placeholder="Nome" /></label>
-              <label class="field"><span>Bairro / cidade</span><input id="leadCity" type="text" value="Juiz de Fora" /></label>
-            </div>
-            <label class="field"><span>WhatsApp</span><input id="leadPhone" type="tel" autocomplete="tel" placeholder="(32) 99999-9999" /></label>
-            <label class="consent"><input id="leadConsent" type="checkbox" /><span>Quero enviar estas informações pelo WhatsApp para solicitar uma avaliação.</span></label>
-          </div>
-
-          <div class="form-step result-step" data-step="result" data-label="Perfil pronto">
-            <div class="result-kicker"><span></span> PERFIL ORGANIZADO</div>
-            <h3>Sua varanda está pronta para uma conversa mais objetiva.</h3>
-            <p>Confira o resumo e abra o WhatsApp para solicitar uma avaliação.</p>
-            <div class="result-summary" id="resultSummary"></div>
-            <div class="result-warning"><strong>Importante:</strong> este resumo não é orçamento, medição técnica ou promessa de desempenho.</div>
-          </div>
-
-          <div class="form-actions">
-            <button class="back-btn" type="button" id="backBtn" disabled>Voltar</button>
-            <button class="next-btn" type="button" id="nextBtn">Continuar <span>→</span></button>
-          </div>
+    <section class="simulator section" id="simulador" aria-labelledby="sim-title">
+      <div class="shell simulator-layout">
+        <div class="simulator-intro"><p class="eyebrow">05 / Seu espaço</p><h2 id="sim-title">Sua varanda.<br>O próximo passo.</h2><p>Conte como é o ambiente e o que você procura. Ao final, revise o resumo e leve essas informações para a conversa com a equipe.</p><div class="sim-note"><span aria-hidden="true">↗</span><p>Uma avaliação começa<br>com as perguntas certas.</p></div><p class="fine-print">Sem cálculo de preço. O envio acontece somente quando você confirmar a mensagem no WhatsApp.</p></div>
+        <form id="glass-form" class="qualification" novalidate data-whatsapp="5532984810470">
+          <div class="form-heading"><span class="eyebrow">Avaliação inicial</span><span id="step-count" aria-live="polite">01 / 06</span></div>
+          <progress id="progress" max="7" value="1" aria-label="Progresso da avaliação">1 de 7</progress>
+          <fieldset data-step="0"><legend tabindex="-1">Onde está a varanda?</legend><p class="step-help">Selecione o tipo de imóvel.</p><div class="choices">
+            <label class="choice"><input type="radio" name="property" value="Apartamento" required><span><strong>Apartamento</strong><small>Varanda residencial</small></span></label>
+            <label class="choice"><input type="radio" name="property" value="Casa"><span><strong>Casa</strong><small>Área residencial</small></span></label>
+            <label class="choice"><input type="radio" name="property" value="Comercial"><span><strong>Comercial</strong><small>Espaço de trabalho</small></span></label>
+            <label class="choice"><input type="radio" name="property" value="Outro"><span><strong>Outro</strong><small>Conversar com a equipe</small></span></label>
+          </div></fieldset>
+          <fieldset data-step="1"><legend tabindex="-1">Como é o formato?</legend><p class="step-help">Escolha a opção mais próxima do seu espaço.</p><div class="choices shapes">
+            <label class="choice"><input type="radio" name="shape" value="Reta" required><span><i class="shape straight" aria-hidden="true"></i><strong>Reta</strong></span></label>
+            <label class="choice"><input type="radio" name="shape" value="Em L"><span><i class="shape corner" aria-hidden="true"></i><strong>Em L</strong></span></label>
+            <label class="choice"><input type="radio" name="shape" value="Em U"><span><i class="shape u-shape" aria-hidden="true"></i><strong>Em U</strong></span></label>
+            <label class="choice"><input type="radio" name="shape" value="Outro / não sei"><span><i class="shape unknown" aria-hidden="true">＋</i><strong>Outro / não sei</strong></span></label>
+          </div></fieldset>
+          <fieldset data-step="2"><legend tabindex="-1">Qual é a área da varanda?</legend><p class="step-help" id="area-help">Área aproximada do piso, em m². A equipe confirma as medidas necessárias ao fechamento.</p><div class="area-display"><output for="area" id="area-value">10</output><span>m²</span></div><label for="area" class="range-label">Área aproximada</label><input type="range" id="area" name="area" min="2" max="50" step="1" value="10" aria-describedby="area-help"><div class="range-ends"><span>2 m²</span><span>50 m² ou mais</span></div><label class="check-row"><input type="checkbox" id="area-unknown" name="areaUnknown">Ainda não sei a área</label></fieldset>
+          <fieldset data-step="3"><legend tabindex="-1">O que você busca?</legend><p class="step-help">Selecione seu principal objetivo.</p><div class="choices choices-list">
+            <label class="choice"><input type="radio" name="goal" value="Proteção contra vento e chuva" required><span><strong>Proteção contra vento e chuva</strong></span></label>
+            <label class="choice"><input type="radio" name="goal" value="Aproveitar melhor o ambiente"><span><strong>Aproveitar melhor o ambiente</strong></span></label>
+            <label class="choice"><input type="radio" name="goal" value="Estética e integração visual"><span><strong>Estética e integração visual</strong></span></label>
+            <label class="choice"><input type="radio" name="goal" value="Reduzir ruídos externos"><span><strong>Reduzir ruídos externos</strong></span></label>
+          </div><p class="fine-print">O objetivo orienta a conversa. Não representa promessa de desempenho; o sistema não é vendido como vedação acústica.</p></fieldset>
+          <fieldset data-step="4"><legend tabindex="-1">Quando pretende avançar?</legend><p class="step-help">A pesquisa também faz parte do processo.</p><div class="choices">
+            <label class="choice"><input type="radio" name="timeline" value="O quanto antes" required><span><strong>O quanto antes</strong><small>Quero avaliar agora</small></span></label>
+            <label class="choice"><input type="radio" name="timeline" value="Nos próximos 30 dias"><span><strong>Em até 30 dias</strong><small>Estou comparando</small></span></label>
+            <label class="choice"><input type="radio" name="timeline" value="Nos próximos 3 meses"><span><strong>Em até 3 meses</strong><small>Estou planejando</small></span></label>
+            <label class="choice"><input type="radio" name="timeline" value="Ainda pesquisando"><span><strong>Ainda pesquisando</strong><small>Quero entender melhor</small></span></label>
+          </div></fieldset>
+          <fieldset data-step="5"><legend tabindex="-1">Vamos nos conhecer.</legend><p class="step-help">Inclua seus dados para identificar a solicitação.</p><div class="contact-fields"><label for="lead-name">Seu nome<input id="lead-name" name="name" autocomplete="name" maxlength="100" required></label><label for="lead-city">Bairro / cidade<input id="lead-city" name="city" autocomplete="address-level2" maxlength="120" placeholder="Ex.: Centro, Juiz de Fora" required></label><label for="lead-phone">WhatsApp com DDD<input id="lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" maxlength="20" placeholder="(32) 99999-9999" required></label></div><label class="check-row consent"><input id="lead-consent" name="consent" type="checkbox" required><span>Quero incluir estas informações na mensagem de solicitação pelo WhatsApp.</span></label><p class="fine-print">Seus dados permanecem nesta página até você decidir enviá-los pelo WhatsApp.</p></fieldset>
+          <section class="form-result" id="form-result" hidden aria-labelledby="result-title"><h3 id="result-title" tabindex="-1">Tudo pronto para conversar.</h3><p>Confira seu resumo. Você pode voltar e ajustar qualquer informação.</p><dl id="result-summary"></dl><p class="fine-print">Este resumo não é orçamento nem medição técnica. Escopo, viabilidade e condições serão avaliados pela equipe.</p></section>
+          <p id="form-error" class="form-error" role="alert"></p>
+          <div class="form-actions" hidden><button id="back" class="button button-quiet" type="button" disabled>Voltar</button><button id="next" class="button button-dark" type="submit">Continuar <span aria-hidden="true">→</span></button><a id="whatsapp-send" class="button button-dark" target="_blank" rel="noopener noreferrer" hidden>Abrir WhatsApp <span aria-hidden="true">↗</span></a></div>
+          <noscript><p class="no-script">Para a avaliação guiada, ative o JavaScript. Você também pode <a href="https://wa.me/5532984810470" target="_blank" rel="noopener noreferrer">conversar diretamente pelo WhatsApp</a>.</p></noscript>
         </form>
       </div>
     </section>
-
-    <section class="section process" id="processo">
-      <div class="container section-head light reveal">
-        <div><p class="eyebrow light">DA PRIMEIRA CONVERSA À INSTALAÇÃO</p><h2>Um processo que transmite <em>segurança antes da obra.</em></h2></div>
-        <p>Na versão final, esta jornada pode ser alinhada ao processo comercial real da empresa.</p>
-      </div>
-      <div class="container process-grid">
-        <article class="reveal"><span>01</span><h3>Contato inicial</h3><p>O cliente envia o perfil do ambiente e o motivo da procura.</p></article>
-        <article class="reveal delay-1"><span>02</span><h3>Visita técnica</h3><p>A equipe avalia medidas, condições do local e necessidades do projeto.</p></article>
-        <article class="reveal delay-2"><span>03</span><h3>Proposta</h3><p>Escopo e condições são definidos de acordo com a avaliação real.</p></article>
-        <article class="reveal"><span>04</span><h3>Instalação</h3><p>Execução com apresentação clara do sistema e orientações de uso.</p></article>
-      </div>
-    </section>
-
-    <section class="section precision">
-      <div class="container precision-grid">
-        <div class="precision-statement reveal">
-          <p class="eyebrow">PRECISÃO NA COMUNICAÇÃO</p>
-          <h2>Cliente exigente percebe quando a empresa <em>fala com clareza.</em></h2>
-        </div>
-        <div class="precision-list reveal delay-1">
-          <article><span>01</span><div><h3>Sem promessas exageradas</h3><p>Redução de ruídos é apresentada como redução — não como vedação acústica.</p></div></article>
-          <article><span>02</span><div><h3>Garantia com contexto</h3><p>Prazo e condições devem seguir exatamente o que estiver vigente e aprovado pela empresa.</p></div></article>
-          <article><span>03</span><div><h3>Cases verificáveis</h3><p>Fotos, localização, metragem e resultados entram apenas quando validados.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq">
-      <div class="container faq-grid">
-        <div class="faq-intro reveal"><p class="eyebrow">DÚVIDAS FREQUENTES</p><h2>Respostas que ajudam a decidir.</h2><p>Conteúdo técnico apresentado de forma simples, sem esconder limitações importantes.</p></div>
-        <div class="faq-list reveal delay-1">
-          <details><summary>O sistema possui esquadrias verticais?</summary><p>Segundo as informações publicadas pela empresa, o sistema é deslizante e não utiliza esquadrias verticais entre os painéis.</p></details>
-          <details><summary>É vendido como vedação acústica?</summary><p>Não. A empresa informa que o sistema pode reduzir ruídos externos, mas não é comercializado como sistema de vedação acústica.</p></details>
-          <details><summary>Como é feita a limpeza?</summary><p>O site atual informa que os vidros podem ser abertos para dentro da varanda, facilitando a limpeza pelo lado interno.</p></details>
-          <details><summary>Qual a área de atendimento?</summary><p>A informação publicada atualmente é de atendimento em Juiz de Fora e região, em um raio de até 200 km.</p></details>
-          <details><summary>Qual é a garantia?</summary><p>A empresa divulga garantia de até 5 anos. Prazo, cobertura e condições devem ser confirmados na proposta comercial.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="final-media" aria-hidden="true"></div>
-      <div class="final-overlay" aria-hidden="true"></div>
-      <div class="container final-content reveal">
-        <p class="eyebrow light">VISITA TÉCNICA</p>
-        <h2>Veja o que a sua varanda<br><em>pode se tornar.</em></h2>
-        <p>Organize seu perfil em menos de um minuto e inicie a conversa com a equipe.</p>
-        <a class="button button-light" href="#simulador">Avaliar minha varanda <span>→</span></a>
-      </div>
-    </section>
+    <section class="shell process section" id="processo" aria-labelledby="process-title"><div class="section-heading"><div><p class="eyebrow">06 / Da conversa ao projeto</p><h2 id="process-title">Clareza em cada etapa.</h2></div><p>O primeiro passo é entender o seu espaço. A equipe orienta os próximos, conforme as condições do local.</p></div><ol class="process-list"><li><span>01</span><h3>Conversa</h3><p>Seu ambiente, suas necessidades e o que você espera do fechamento.</p></li><li><span>02</span><h3>Avaliação</h3><p>Medidas e condições do local para estudar a solução.</p></li><li><span>03</span><h3>Proposta</h3><p>Escopo, prazo e condições definidos para o seu projeto.</p></li><li><span>04</span><h3>Instalação</h3><p>Execução conforme o escopo acordado e orientações de uso.</p></li></ol></section>
+    <section class="faq section" id="duvidas" aria-labelledby="faq-title"><div class="shell faq-layout"><div><p class="eyebrow">07 / Antes de decidir</p><h2 id="faq-title">Boas perguntas.<br>Respostas claras.</h2></div><div class="faq-list">
+      <details><summary>O fechamento tem vedação acústica?</summary><p>Não. A empresa informa redução de ruídos, mas não comercializa o sistema como vedação acústica. O resultado depende das condições do ambiente.</p></details>
+      <details><summary>Como funciona a limpeza dos vidros?</summary><p>A abertura para dentro permite acesso pelo lado interno. Solicite à equipe as orientações de uso e manutenção para a configuração instalada.</p></details>
+      <details><summary>Qual é a garantia?</summary><p>A empresa divulga garantia de até 5 anos. Confirme prazo, cobertura e condições na proposta do seu projeto.</p></details>
+      <details><summary>Quais localidades são atendidas?</summary><p>Juiz de Fora e região, em um raio divulgado de até 200 km. Confirme com a equipe a disponibilidade para o seu endereço.</p></details>
+      <details><summary>O simulador gera um orçamento?</summary><p>Não. Ele organiza informações para a primeira conversa. Medidas, viabilidade, especificações e valores dependem da avaliação técnica.</p></details>
+    </div></div></section>
+    <section class="closing section" aria-labelledby="closing-title"><div class="shell"><p class="eyebrow">Uma nova leitura do seu espaço</p><div class="closing-row"><h2 id="closing-title">Abra espaço<br>para a vista.</h2><a class="button button-light" href="#simulador">Avaliar minha varanda <span aria-hidden="true">↗</span></a></div><div class="closing-line" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div></div></section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand"><div class="brand"><span class="brand-symbol"><i></i><i></i><i></i></span><span class="brand-copy"><strong>CORTINA DE VIDRO</strong><small>JUIZ DE FORA</small></span></div><p>Conceito digital demonstrativo desenvolvido para apresentação comercial.</p></div>
-      <div><small>CONTATO PÚBLICO</small><a href="tel:+553230822020">(32) 3082-2020</a><a href="https://wa.me/5532984810470" target="_blank" rel="noreferrer">(32) 98481-0470</a></div>
-      <div><small>ENDEREÇO PUBLICADO</small><p>Av. Francisco Valadares, 301<br>Poço Rico · Juiz de Fora · MG</p></div>
-      <div><small>NAVEGAÇÃO</small><a href="#projetos">Projetos</a><a href="#sistema">Sistema</a><a href="#simulador">Simulador</a></div>
-    </div>
-    <div class="container footer-bottom"><span>PROTÓTIPO NÃO OFICIAL · V1</span><a href="#top">Voltar ao topo ↑</a></div>
-  </footer>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=1.0"></script>
+  <footer class="site-footer"><div class="shell footer-main"><a class="brand" href="#inicio"><svg class="brand-mark" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M3 9h9v32H3zM18 5h9v32h-9zM33 1h9v32h-9z" stroke="currentColor"/></svg><span><strong>CORTINA DE VIDRO</strong><small>JUIZ DE FORA</small></span></a><div><p class="eyebrow">Converse com a equipe</p><a href="https://wa.me/5532984810470" target="_blank" rel="noopener noreferrer">(32) 98481-0470 ↗</a><a href="tel:+553230822020">(32) 3082-2020</a></div><div><p class="eyebrow">Juiz de Fora · MG</p><address>Av. Francisco Valadares, 301<br>Poço Rico</address></div><nav aria-label="Navegação do rodapé"><a href="#projetos">Projetos</a><a href="#simulador">Avaliação</a><a href="#duvidas">Dúvidas</a></nav></div><div class="shell footer-bottom"><p>Protótipo não oficial · Apresentação comercial<br><span>Identidade visual conceitual. Conteúdo sujeito à aprovação da empresa.</span></p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+  <a class="floating-cta" href="#simulador" hidden>Avaliar varanda <span aria-hidden="true">↗</span></a>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-index" class="eyebrow">Imagem 01</span><button type="button" id="dialog-close" autofocus>Fechar <span aria-hidden="true">×</span></button></div><figure><img id="dialog-image" alt=""><figcaption><h2 id="dialog-title"></h2><p>Imagem de obra publicada pela Cortina de Vidro JF.</p></figcaption></figure><div class="dialog-navigation"><button type="button" id="previous-image">← Anterior</button><span id="image-count" aria-live="polite">01 / 04</span><button type="button" id="next-image">Próxima →</button></div></dialog>
 </body>
 </html>

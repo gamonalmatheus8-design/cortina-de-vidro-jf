@@ -1,0 +1,13 @@
+{
+  "name": "cortina-de-vidro-jf",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Conceito demonstrativo estático — Cortina de Vidro JF",
+  "scripts": {
+    "dev": "node tests/serve.cjs . 4173",
+    "test": "node tests/qa.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
